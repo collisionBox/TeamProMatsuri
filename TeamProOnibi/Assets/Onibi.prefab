@@ -4827,8 +4827,9 @@ GameObject:
   - component: {fileID: 701840636391641998}
   - component: {fileID: 823417056475847086}
   - component: {fileID: 822048859186471440}
+  - component: {fileID: 225499842208291027}
   m_Layer: 0
-  m_Name: Magic fire 1 1
+  m_Name: Onibi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4843,7 +4844,7 @@ Transform:
   m_GameObject: {fileID: 696137532310267202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.39, y: 0.35, z: -5.23}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2106761, y: 2106761, z: 2106761}
   m_Children:
   - {fileID: 694152892138881210}
   - {fileID: 701761802678916444}
@@ -9636,6 +9637,22 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!54 &225499842208291027
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696137532310267202}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &696144309426101500
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,20 +6,17 @@ using UnityEngine;
 public class OnimenBehavior : MonoBehaviour
 {
     public GameObject player;
-    public float T = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
-        //transform.LookAt(player.transform);
+        transform.LookAt(player.transform);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //transform.LookAt(player.transform);
+        transform.LookAt(player.transform);
        
-        float f = 1.0f / T;
-        float y = Mathf.Sin(2 * Mathf.PI * f * Time.time);
-        this.transform.position = new Vector3(0,y,0);//èoåªà íuÇíÜêSÇ…ï‚ê≥Ç∑ÇÈÇ◊Çµ
+        transform.position += (new Vector3(Mathf.Sin(Time.time / 2), Mathf.Cos(Time.time*2) , 0.0f) * Time.deltaTime);
     }
 }
