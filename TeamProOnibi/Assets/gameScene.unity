@@ -742,6 +742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1755860526}
   mazzle: {fileID: 1916506414}
-  onibi: {fileID: 696137532310267202, guid: bf876f68145993a4f8252f70609445f4, type: 3}
+  onibi: {fileID: 3573056739845963973, guid: bf876f68145993a4f8252f70609445f4, type: 3}
   speed: 2
   destroyTime: 3
+  waitTime: 3

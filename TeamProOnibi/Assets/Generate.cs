@@ -9,36 +9,39 @@ public class Generate : MonoBehaviour
     public GameObject onibi;
     public float speed = 2.0f;
     public float destroyTime = 3.0f;
-    float scale;
-    public float exRate = 0.2f;
+    public float waitTime = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
         transform.LookAt(player.transform);
-        StartCoroutine("Onibi");
-        scale = 0;
+        StartCoroutine(FirstWait());
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = mazzle.transform.position;
-        scale += exRate;
-        onibi.transform.localScale += new Vector3(scale, scale, scale);
 
-        鬼火のほうでスケールを変更→ここでif（１になったら）発射する
+    }
+    IEnumerator FirstWait()
+    {
+        yield return new WaitForSeconds(waitTime);
+        StartCoroutine(Onibi());
     }
     IEnumerator Onibi()
     {
         while (true)
         {
+            //敵のほうを向く
             transform.LookAt(player.transform);
+           
+            //発射処理
             var aim = this.player.transform.position - this.transform.position;//方向の設定
             var shot = Instantiate(onibi, transform.position, Quaternion.LookRotation(aim));
             shot.GetComponent<Rigidbody>().velocity = transform.forward.normalized * speed;//移動
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(waitTime);
             Destroy(shot, destroyTime);
 
         }
     }
+
 }
