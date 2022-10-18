@@ -16,11 +16,13 @@ public class OnibiBehavior : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider tag)
     {
-      
+        if (tag.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
 
-        Destroy(gameObject);
-        
+        }
+      
     }
 }
