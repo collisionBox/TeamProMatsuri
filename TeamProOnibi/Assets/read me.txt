@@ -1,0 +1,15 @@
+必要なもの
+エネミー：Omen
+弾:Onibi
+スクリプト:OnimenBehavior,OnibiBehavior,Generate
+
+初期設定
+・鬼面プレハブ内に「mazzle」があることを確認してください。
+・鬼面プレハブに「OnimenBehavior」がアタッチされていることを確認してください。
+・鬼面プレハブにアタッチされている「OnimenBehavior」スクリプトのPlayerヘッダーに対応するプレイヤーゲームオブジェクトを参照させて下さい。
+・「mazzle」にアタッチされている「Generate」スクリプトのPlayerヘッダーに対応するプレイヤーゲームオブジェクトを、「Onibi」ヘッダーに「Onibi」プレハブを参照させてください。
+
+備考
+Omenプレハブ内mazzle下Generateスクリプトに弾速（スピード）、消滅時間（DestoryTime）、発射クールタイム（WaitTime）を準備しています。
+ご自由に変更してください。
+その他ご不明な点がございましたら松岡までご連絡ください。
